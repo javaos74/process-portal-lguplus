@@ -1,0 +1,166 @@
+/* Custom BPMN styles for status indicators */
+
+/* Pulse animation for active elements */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Status marker styles - Updated to match BPMN.js structure */
+.djs-element.status-completed .djs-visual > :first-child {
+  fill: #10b98130 !important;
+  stroke: #059669 !important;
+  stroke-width: 3px !important;
+}
+
+.djs-element.status-active .djs-visual > :first-child {
+  fill: #3b82f620 !important;
+  stroke: #2563eb !important;
+  stroke-width: 3px !important;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.djs-element.status-error .djs-visual > :first-child {
+  fill: #ef444430 !important;
+  stroke: #dc2626 !important;
+  stroke-width: 3px !important;
+}
+
+/* Special styling for activities/tasks */
+.djs-element.status-completed .djs-visual rect {
+  fill: #10b98130 !important;
+  stroke: #059669 !important;
+  stroke-width: 3px !important;
+}
+
+.djs-element.status-active .djs-visual rect {
+  fill: #3b82f620 !important;
+  stroke: #2563eb !important;
+  stroke-width: 3px !important;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.djs-element.status-error .djs-visual rect {
+  fill: #ef444430 !important;
+  stroke: #dc2626 !important;
+  stroke-width: 3px !important;
+}
+
+/* Special styling for events (circles) */
+.djs-element.status-completed .djs-visual circle {
+  fill: #10b98130 !important;
+  stroke: #059669 !important;
+  stroke-width: 3px !important;
+}
+
+.djs-element.status-active .djs-visual circle {
+  fill: #3b82f620 !important;
+  stroke: #2563eb !important;
+  stroke-width: 3px !important;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.djs-element.status-error .djs-visual circle {
+  fill: #ef444430 !important;
+  stroke: #dc2626 !important;
+  stroke-width: 3px !important;
+}
+
+/* Special styling for gateways (diamonds) */
+.djs-element.status-completed .djs-visual polygon {
+  fill: #10b98130 !important;
+  stroke: #059669 !important;
+  stroke-width: 3px !important;
+}
+
+.djs-element.status-active .djs-visual polygon {
+  fill: #3b82f620 !important;
+  stroke: #2563eb !important;
+  stroke-width: 3px !important;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.djs-element.status-error .djs-visual polygon {
+  fill: #ef444430 !important;
+  stroke: #dc2626 !important;
+  stroke-width: 3px !important;
+}
+
+/* Override BPMN.js default styles for better visibility */
+.djs-container {
+  background-color: transparent !important;
+}
+
+/* Dark mode adjustments */
+.dark .djs-element.status-completed .djs-visual > :first-child,
+.dark .djs-element.status-completed .djs-visual rect,
+.dark .djs-element.status-completed .djs-visual circle,
+.dark .djs-element.status-completed .djs-visual polygon {
+  fill: #10b98140 !important;
+  stroke: #10b981 !important;
+}
+
+.dark .djs-element.status-active .djs-visual > :first-child,
+.dark .djs-element.status-active .djs-visual rect,
+.dark .djs-element.status-active .djs-visual circle,
+.dark .djs-element.status-active .djs-visual polygon {
+  fill: #3b82f630 !important;
+  stroke: #3b82f6 !important;
+}
+
+.dark .djs-element.status-error .djs-visual > :first-child,
+.dark .djs-element.status-error .djs-visual rect,
+.dark .djs-element.status-error .djs-visual circle,
+.dark .djs-element.status-error .djs-visual polygon {
+  fill: #ef444440 !important;
+  stroke: #ef4444 !important;
+}
+
+/* Hide bpmn.io watermark */
+.bjs-powered-by {
+  display: none !important;
+}
+
+.djs-container a[href*="bpmn.io"] {
+  display: none !important;
+}
+
+/* Also hide any SVG logos */
+.djs-container svg[title*="bpmn.io"] {
+  display: none !important;
+}
+
+/* Pan functionality cursor styles */
+.bpmn-container {
+  cursor: grab;
+  user-select: none;
+}
+
+.bpmn-container:active {
+  cursor: grabbing;
+}
+
+.bpmn-container.panning {
+  cursor: grabbing;
+}
+
+/* Smooth zoom transitions */
+.djs-container svg {
+  transition: transform 0.2s ease-out;
+}
+
+/* Touch support improvements */
+.djs-container {
+  touch-action: none;
+}

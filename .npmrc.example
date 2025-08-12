@@ -1,0 +1,9 @@
+# NPM Configuration Example
+# Copy this file to .npmrc and replace with your actual GitHub token
+
+# UiPath packages are hosted on GitHub Package Registry
+@uipath:registry=https://npm.pkg.github.com
+
+# Replace 'your_github_token_here' with your actual GitHub Personal Access Token
+# The token needs 'read:packages' permission to access UiPath packages
+//npm.pkg.github.com/:_authToken=your_github_token_here

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="sample-diagram" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="8b636345">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:extensionElements>
+      <uipath:variables version="v1">
+        <uipath:inputOutput id="vmLagjXYh" name="Error" type="jsonSchema" elementId="Activity_nSbqdI"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vxr8AxKww" name="ReviewDecision" type="string" elementId="Event_vIL8VL" />
+        <uipath:inputOutput id="v8CgE8XiZ" name="Error" type="jsonSchema" elementId="Activity_Jzlzxy"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vfgq4zNIA" name="Error" type="jsonSchema" elementId="Activity_4QBYEQ"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vJpQRas8P" name="Action" type="string" elementId="Activity_UCxhmq" />
+        <uipath:inputOutput id="vVuYKJxR8" name="Error" type="jsonSchema" elementId="Activity_UCxhmq"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vVdpcsUW8" name="Error" type="jsonSchema" elementId="Activity_6FQuty"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="v6JA24orA" name="Error" type="jsonSchema" elementId="Activity_5GiN1E"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vfbBSFFJG" name="Error" type="jsonSchema" elementId="Activity_8vw8ug"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vSlMPoti7" name="HitlReview" type="string" elementId="Activity_Dn4R6H" custom="true" />
+        <uipath:inputOutput id="v3qzERlRD" name="Decision" type="boolean" elementId="Activity_1NKtIv" custom="true" />
+        <uipath:inputOutput id="vvILMH4B7" name="ApplicationIntake_RetryCount" type="integer" elementId="Event_start" custom="true" />
+        <uipath:inputOutput id="vfPi2xhpA" name="Id" type="string" elementId="Event_start" />
+        <uipath:inputOutput id="vIRYqKwJg" name="response" type="jsonSchema" elementId="Event_start"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"LastModifiedDate":{"title":"Last modified date","type":"string","description":"Last Modified Date"},"Maestro_User__c":{"title":"Maestro user","type":"string","description":"Maestro_User"},"OtherAddress":{"title":"Other address","$ref":"#/definitions/OtherAddress"},"Other_Income__c":{"title":"Other income","type":"string","description":"Other Income"},"Department":{"title":"Department","type":"string","description":"Department"},"ContactSource":{"title":"Creation source","type":"string","description":"Creation Source"},"OtherLongitude":{"title":"Other longitude","type":"number","description":"Other Longitude"},"OtherCity":{"title":"Other city","type":"string","description":"Other City"},"Pregnant__c":{"title":"Pregnant","type":"boolean","description":"Pregnant"},"Residency_Duration_Years__c":{"title":"Residency duration (years)","type":"number","description":"Residency Duration (Years)"},"PhotoUrl":{"title":"Photo url","type":"string","description":"Photo URL"},"Asset_Allocation_Breakdown__c":{"title":"Asset allocation breakdown","type":"string","description":"Asset Allocation Breakdown"},"Yearly_Income__c":{"title":"Yearly income (this year)","type":"number","description":"Yearly Income (this year)"},"IsDeleted":{"title":"Deleted","type":"boolean","description":"Deleted"},"OtherGeocodeAccuracy":{"title":"Other geocode accuracy","type":"string","description":"Other Geocode Accuracy"},"Race_Optional_select_all_that_apply__c":{"title":"Race (optional select all that apply)","type":"string","description":"Race (Optional - select all that apply)"},"Type_of_Work_if_Self_Employed__c":{"title":"Type of work if self employed","type":"string","description":"Type of Work if Self-Employed"},"Ethnicity__c":{"title":"Ethnicity","type":"string","description":"Ethnicity"},"MailingCity":{"title":"Mailing city","type":"string","description":"Mailing City"},"OtherStreet":{"title":"Other street","type":"string","description":"Other Street"},"CleanStatus":{"title":"Clean status","type":"string","description":"Clean Status"},"OtherLatitude":{"title":"Other latitude","type":"number","description":"Other Latitude"},"MailingAddress":{"title":"Mailing address","$ref":"#/definitions/MailingAddress"},"Id":{"title":"Contact ID","type":"string","description":"Contact ID"},"Jigsaw":{"title":"Data com key","type":"string","description":"Data.com Key"},"Baishali_CF_Label_ABC1__c":{"title":"Baishali cf label","type":"string","description":"Baishali CF Label"},"OtherPhone":{"title":"Other phone","type":"string","description":"Other Phone"},"Description":{"title":"Contact description","type":"string","description":"Contact Description"},"Filing_Federal_Income_next_year__c":{"title":"Filing federal income next year?","type":"boolean","description":"Filing Federal Income next year?"},"AssistantName":{"title":"Assistant's name","type":"string","description":"Assistant's Name"},"MailingCountry":{"title":"Mailing country","type":"string","description":"Mailing Country"},"Employment__c":{"title":"Employment","type":"string","description":"Employment"},"Unrealized_Gain_Loss__c":{"title":"Unrealized gain/loss","type":"string","description":"Unrealized Gain/Loss"},"Salutation":{"title":"Salutation","type":"string","description":"Salutation"},"Conditions_causing_physical_limitations__c":{"title":"Conditions causing physical limitations","type":"boolean","description":"Conditions causing physical limitations"},"MailingState":{"title":"Mailing state/province","type":"string","description":"Mailing State/Province"},"Level__c":{"title":"Level","type":"string","description":"Level"},"OwnerId":{"title":"Owner ID","type":"string","description":"Owner ID"},"OtherCountry":{"title":"Other country","type":"string","description":"Other Country"},"RecordTypeId":{"title":"Record type ID","type":"string","description":"Record Type ID"},"Portfolio_Value__c":{"title":"Portfolio value","type":"string","description":"Portfolio Value"},"EmailBouncedReason":{"title":"Email bounced reason","type":"string","description":"Email Bounced Reason"},"FirstName":{"title":"First name","type":"string","description":"First Name"},"OtherPostalCode":{"title":"Other zip/postal code","type":"string","description":"Other Zip/Postal Code"},"SystemModstamp":{"title":"System modstamp","type":"string","description":"System Modstamp"},"HomePhone":{"title":"Home phone","type":"string","description":"Home Phone"},"LastActivityDate":{"title":"Last activity","type":"string","description":"Last Activity"},"Percentage_Return__c":{"title":"Percentage return","type":"number","description":"Percentage Return"},"Languages__c":{"title":"Languages","type":"string","description":"Languages"},"AccountId":{"title":"Account ID","type":"string","description":"Account ID"},"Email":{"title":"Email","type":"string","description":"Email"},"Cost_Basis__c":{"title":"Cost basis","type":"string","description":"Cost Basis"},"SSN__c":{"title":"Ssn","type":"string","description":"SSN"},"MobilePhone":{"title":"Mobile phone","type":"string","description":"Mobile Phone"},"Name":{"title":"Full name","type":"string","description":"Full Name"},"Deductions__c":{"title":"Deductions","type":"string","description":"Deductions"},"Applicant_ID__c":{"title":"Applicant ID","type":"string","description":"Applicant ID"},"Date_of_Birth__c":{"title":"Date of birth","type":"string","description":"Date of Birth"},"CreatedById":{"title":"Created by ID","type":"string","description":"Created By ID"},"MailingLatitude":{"title":"Mailing latitude","type":"number","description":"Mailing Latitude"},"U_S_citizen_or_U_S_national__c":{"title":"U s citizen or u s national","type":"boolean","description":"U.S. citizen or U.S. national"},"Credit_Score__c":{"title":"Credit score","type":"number","description":"Credit Score"},"Employer_Name__c":{"title":"Employer name","type":"string","description":"Employer Name"},"MasterRecordId":{"title":"Master record ID","type":"string","description":"Master Record ID"},"IndividualId":{"title":"Individual ID","type":"string","description":"Individual ID"},"Last_Meeting__c":{"title":"Last meeting","type":"string","description":"Last Meeting"},"IsEmailBounced":{"title":"Is email bounced","type":"boolean","description":"Is Email Bounced"},"Annual_Income__c":{"title":"Annual income","type":"number","description":"Annual Income"},"LastViewedDate":{"title":"Last viewed date","type":"string","description":"Last Viewed Date"},"Birthdate":{"title":"Birthdate","type":"string","description":"Birthdate"},"LeadSource":{"title":"Lead source","type":"string","description":"Lead Source"},"CreatedDate":{"title":"Created date","type":"string","description":"Created Date"},"LastName":{"title":"Last name","type":"string","description":"Last Name"},"Case_ID__c":{"title":"Case ID","type":"string","description":"Case ID"},"Employment_Status__c":{"title":"Employment status","type":"string","description":"Employment Status"},"MailingStreet":{"title":"Mailing street","type":"string","description":"Mailing Street"},"AssistantPhone":{"title":"Asst phone","type":"string","description":"Asst. Phone"},"EmailBouncedDate":{"title":"Email bounced date","type":"string","description":"Email Bounced Date"},"Monthly_Income__c":{"title":"Monthly income","type":"number","description":"Monthly Income"},"LastReferencedDate":{"title":"Last referenced date","type":"string","description":"Last Referenced Date"},"OtherState":{"title":"Other state/province","type":"string","description":"Other State/Province"},"Client_Inception__c":{"title":"Client inception","type":"string","description":"Client Inception"},"DataService_Id__c":{"title":"Data service ID","type":"string","description":"DataService_Id"},"MailingLongitude":{"title":"Mailing longitude","type":"number","description":"Mailing Longitude"},"Phone":{"title":"Business phone","type":"string","description":"Business Phone"},"MailingPostalCode":{"title":"Mailing zip/postal code","type":"string","description":"Mailing Zip/Postal Code"},"LastCUUpdateDate":{"title":"Last stay in touch save date","type":"string","description":"Last Stay-in-Touch Save Date"},"MailingGeocodeAccuracy":{"title":"Mailing geocode accuracy","type":"string","description":"Mailing Geocode Accuracy"},"Wants_help_with_medical_bills__c":{"title":"Wants help with medical bills","type":"boolean","description":"Wants help with medical bills"},"IsPriorityRecord":{"title":"Important","type":"boolean","description":"Important"},"Employment_in_the_past_year__c":{"title":"Employment in the past year","type":"string","description":"Employment in the past year"},"Health_coverage_needed__c":{"title":"Health coverage needed","type":"boolean","description":"Health coverage needed"},"Self_Employment_Net_Income__c":{"title":"Self employment net income","type":"number","description":"Self-Employment Net Income"},"Title":{"title":"Title","type":"string","description":"Title"},"LastCURequestDate":{"title":"Last stay in touch request date","type":"string","description":"Last Stay-in-Touch Request Date"},"Last_Activity__c":{"title":"Last activity","type":"string","description":"Last Activity"},"ReportsToId":{"title":"Reports to ID","type":"string","description":"Reports To ID"},"Preferred_Language__c":{"title":"Preferred language","type":"string","description":"Preferred Language"},"Fax":{"title":"Business fax","type":"string","description":"Business Fax"},"LastModifiedById":{"title":"Last modified by ID","type":"string","description":"Last Modified By ID"},"JigsawContactId":{"title":"Jigsaw contact ID","type":"string","description":"Jigsaw Contact ID"},"NPI__c":{"title":"Npi","type":"string","description":"NPI"}},"definitions":{"OtherAddress":{"type":"object","properties":{"country":{"title":"Other address country","type":"string"},"postalCode":{"title":"Other address postal code","type":"string"},"city":{"title":"Other address city","type":"string"},"street":{"title":"Other address street","type":"string"},"longitude":{"title":"Other address longitude","type":"number"},"latitude":{"title":"Other address latitude","type":"number"},"state":{"title":"Other address state","type":"string"},"geocodeAccuracy":{"title":"Billing geocode accuracy","type":"string","description":"Billing Geocode Accuracy"}}},"MailingAddress":{"type":"object","properties":{"geocodeAccuracy":{"title":"Billing geocode accuracy","type":"string","description":"Billing Geocode Accuracy"},"state":{"title":"Mailing address state","type":"string"},"country":{"title":"Mailing address country","type":"string"},"latitude":{"title":"Mailing address latitude","type":"number"},"postalCode":{"title":"Mailing address postal code","type":"string"},"longitude":{"title":"Mailing address longitude","type":"number"},"city":{"title":"Mailing address city","type":"string"},"street":{"title":"Mailing address street","type":"string"}}}}}]]></uipath:inputOutput>
+      </uipath:variables>
+      <uipath:bindings version="v1">
+        <uipath:binding id="b8Np4TBVC" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN1" propertyAttribute="folderPath" />
+        <uipath:binding id="b86ozYY6G" name="name" type="string" default="BPMN1" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN1" propertyAttribute="name" />
+        <uipath:binding id="bucnU0mMa" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN4" propertyAttribute="folderPath" />
+        <uipath:binding id="bBChPKkkZ" name="name" type="string" default="BPMN4" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN4" propertyAttribute="name" />
+        <uipath:binding id="bEnWKvgrB" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN2" propertyAttribute="folderPath" />
+        <uipath:binding id="bihyncPBl" name="name" type="string" default="BPMN2" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN2" propertyAttribute="name" />
+        <uipath:binding id="bMaHPccAh" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN22" propertyAttribute="folderPath" />
+        <uipath:binding id="brmPDQHGi" name="name" type="string" default="BPMN22" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN22" propertyAttribute="name" />
+        <uipath:binding id="b8pGi1xl7" name="uipath-uipath-dataservice connection" type="string" default="7cd9f97b-cdd2-401c-9a40-8125765f0862" resource="Connection" resourceKey="7cd9f97b-cdd2-401c-9a40-8125765f0862" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bx1jkiYNO" name="FolderKey" type="string" default="27ad2c17-4adb-4a24-a8a7-48948d04e65a" resource="Connection" resourceKey="7cd9f97b-cdd2-401c-9a40-8125765f0862" propertyAttribute="folderKey" />
+        <uipath:binding id="b67hoYzUS" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.DummyProcess" propertyAttribute="folderPath" />
+        <uipath:binding id="btqpXmcSJ" name="name" type="string" default="DummyProcess" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.DummyProcess" propertyAttribute="name" />
+        <uipath:binding id="bPK4RNkxA" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN3" propertyAttribute="folderPath" />
+        <uipath:binding id="brPi5L1c3" name="name" type="string" default="BPMN3" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN3" propertyAttribute="name" />
+        <uipath:binding id="bTrw1yYub" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN5" propertyAttribute="folderPath" />
+        <uipath:binding id="bejEIcVGs" name="name" type="string" default="BPMN5" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN5" propertyAttribute="name" />
+        <uipath:binding id="biAH6QNbB" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN6" propertyAttribute="folderPath" />
+        <uipath:binding id="bPDsy61rV" name="name" type="string" default="BPMN6" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.BPMN6" propertyAttribute="name" />
+        <uipath:binding id="bj8ZuOW7M" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ReviewCallActivity" propertyAttribute="folderPath" />
+        <uipath:binding id="bFIgIDkLj" name="name" type="string" default="ReviewCallActivity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ReviewCallActivity" propertyAttribute="name" />
+        <uipath:binding id="bBa9dSHDK" name="folderPath" type="string" default="Solution Folder" resource="app" resourceKey="Solution Folder.App" propertyAttribute="folderPath" />
+        <uipath:binding id="br7OQagN4" name="name" type="string" default="App" resource="app" resourceKey="Solution Folder.App" propertyAttribute="name" />
+        <uipath:binding id="bdDK9FeHW" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ReviewCallActivity_1" propertyAttribute="folderPath" />
+        <uipath:binding id="btR8BDbFh" name="name" type="string" default="ReviewCallActivity_1" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ReviewCallActivity_1" propertyAttribute="name" />
+        <uipath:binding id="bzxedj03X" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ReviewCallActivity_2" propertyAttribute="folderPath" />
+        <uipath:binding id="b5XLWcP7p" name="name" type="string" default="ReviewCallActivity_2" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ReviewCallActivity_2" propertyAttribute="name" />
+        <uipath:binding id="bgmRBLf6P" name="folderPath" type="string" default="Shared" resource="app" resourceKey="Shared.Review HITL" propertyAttribute="folderPath" />
+        <uipath:binding id="bglkzi0v8" name="name" type="string" default="Review HITL" resource="app" resourceKey="Shared.Review HITL" propertyAttribute="name" />
+        <uipath:binding id="bl8y5UwGh" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.BPMN1" propertyAttribute="folderPath" />
+        <uipath:binding id="bJzxdqX5k" name="name" type="string" default="BPMN1" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.BPMN1" propertyAttribute="name" />
+        <uipath:binding id="byrl7ndNi" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.BPMN4" propertyAttribute="folderPath" />
+        <uipath:binding id="bXR83iFJb" name="name" type="string" default="BPMN4" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.BPMN4" propertyAttribute="name" />
+        <uipath:binding id="b0zfzcedC" name="uipath-uipath-dataservice connection" type="string" default="5145535e-76a1-42b6-ad5f-8c673a6f8b42" resource="Connection" resourceKey="5145535e-76a1-42b6-ad5f-8c673a6f8b42" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bw2viP5d3" name="FolderKey" type="string" default="1cb0b302-3fb4-4757-a61f-0ae3fff7d084" resource="Connection" resourceKey="5145535e-76a1-42b6-ad5f-8c673a6f8b42" propertyAttribute="folderKey" />
+        <uipath:binding id="bf40JsqWy" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.BPMN22" propertyAttribute="folderPath" />
+        <uipath:binding id="bI1KsXTJr" name="name" type="string" default="BPMN22" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.BPMN22" propertyAttribute="name" />
+        <uipath:binding id="bELHvZxS3" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.DummyProcess" propertyAttribute="folderPath" />
+        <uipath:binding id="b5d4NfcwD" name="name" type="string" default="DummyProcess" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.DummyProcess" propertyAttribute="name" />
+        <uipath:binding id="b9g83m9NX" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.BPMN5" propertyAttribute="folderPath" />
+        <uipath:binding id="bXXsJtqQ6" name="name" type="string" default="BPMN5" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.BPMN5" propertyAttribute="name" />
+        <uipath:binding id="bTPzbVdFb" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.ApplicationIntakeCallActivity" propertyAttribute="folderPath" />
+        <uipath:binding id="bGehtD381" name="name" type="string" default="ApplicationIntakeCallActivity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.ApplicationIntakeCallActivity" propertyAttribute="name" />
+        <uipath:binding id="bI8q16ZOi" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.DataEntryVerification.CallActivity" propertyAttribute="folderPath" />
+        <uipath:binding id="bgQLhwfyb" name="name" type="string" default="DataEntryVerification.CallActivity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.DataEntryVerification.CallActivity" propertyAttribute="name" />
+        <uipath:binding id="bz3WbBD5m" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.Loan.Eligibility.Analysis.CallActivity" propertyAttribute="folderPath" />
+        <uipath:binding id="bQnP158mc" name="name" type="string" default="Loan.Eligibility.Analysis.CallActivity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.Loan.Eligibility.Analysis.CallActivity" propertyAttribute="name" />
+        <uipath:binding id="bgtJjKKZx" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.System.Updates.Applicant.Communication.Call.activity" propertyAttribute="folderPath" />
+        <uipath:binding id="bKxdzCvuZ" name="name" type="string" default="System.Updates.Applicant.Communication.Call.activity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.System.Updates.Applicant.Communication.Call.activity" propertyAttribute="name" />
+        <uipath:binding id="bMq2eXeL6" name="uipath-salesforce-sfdc connection" type="string" default="d0e79239-80e9-4d99-a07c-50189a517af6" resource="Connection" resourceKey="d0e79239-80e9-4d99-a07c-50189a517af6" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bwrIYyrwi" name="folderPath" type="string" default="Shared" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.ApplicationIntakeHITLCallActivity" propertyAttribute="folderPath" />
+        <uipath:binding id="b259qqcez" name="name" type="string" default="ApplicationIntakeHITLCallActivity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Shared.ApplicationIntakeHITLCallActivity" propertyAttribute="name" />
+        <uipath:binding id="bw2XNJsAw" name="uipath-salesforce-sfdc connection" type="string" default="cdd38788-e5d3-4a26-a61b-c84401478c62" resource="Connection" resourceKey="cdd38788-e5d3-4a26-a61b-c84401478c62" propertyAttribute="ConnectionId" />
+        <uipath:binding id="buZOKMeKg" name="uipath-salesforce-sfdc connection" type="string" default="121b09e2-a1bf-4def-8eee-5a61a3f6850e" resource="Connection" resourceKey="121b09e2-a1bf-4def-8eee-5a61a3f6850e" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bxW85Qae3" name="FolderKey" type="string" default="717ede25-7494-44d5-9d65-5dab660653f6" resource="Connection" resourceKey="121b09e2-a1bf-4def-8eee-5a61a3f6850e" propertyAttribute="folderKey" />
+        <uipath:binding id="bTH2TJqSB" name="uipath-salesforce-sfdc connection" type="string" default="787e3a07-5866-4b97-a371-f910bacf2f27" resource="Connection" resourceKey="787e3a07-5866-4b97-a371-f910bacf2f27" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bNhtkUusi" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ApplicationIntakeCallActivity" propertyAttribute="folderPath" />
+        <uipath:binding id="bNhWi4WGA" name="name" type="string" default="ApplicationIntakeCallActivity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ApplicationIntakeCallActivity" propertyAttribute="name" />
+        <uipath:binding id="b2aUik0a8" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ApplicationIntakeHITLCallActivity" propertyAttribute="folderPath" />
+        <uipath:binding id="bFQ9I4yrt" name="name" type="string" default="ApplicationIntakeHITLCallActivity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.ApplicationIntakeHITLCallActivity" propertyAttribute="name" />
+        <uipath:binding id="b5zIqMTz0" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.DataEntryVerification.CallActivity" propertyAttribute="folderPath" />
+        <uipath:binding id="bLhRPO9sg" name="name" type="string" default="DataEntryVerification.CallActivity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.DataEntryVerification.CallActivity" propertyAttribute="name" />
+        <uipath:binding id="bCanHEwH9" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.Loan.Eligibility.Analysis.CallActivity" propertyAttribute="folderPath" />
+        <uipath:binding id="bThCs1oj1" name="name" type="string" default="Loan.Eligibility.Analysis.CallActivity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.Loan.Eligibility.Analysis.CallActivity" propertyAttribute="name" />
+        <uipath:binding id="bNFOJsdzT" name="folderPath" type="string" default="Solution Folder" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.System.Updates.Applicant.Communication.Call.activity" propertyAttribute="folderPath" />
+        <uipath:binding id="bSyyBXZIs" name="name" type="string" default="System.Updates.Applicant.Communication.Call.activity" resource="process" resourceSubType="ProcessOrchestration" resourceKey="Solution Folder.System.Updates.Applicant.Communication.Call.activity" propertyAttribute="name" />
+        <uipath:binding id="biw7soIeE" name="uipath-salesforce-sfdc connection" type="string" default="8bf1a263-3cbf-4ce3-9e27-6312c24ba42b" resource="Connection" resourceKey="8bf1a263-3cbf-4ce3-9e27-6312c24ba42b" propertyAttribute="ConnectionId" />
+        <uipath:binding id="bbBcJVyac" name="FolderKey" type="string" default="9d50b417-27c8-4573-a8e4-ca88eaa93418" resource="Connection" resourceKey="8bf1a263-3cbf-4ce3-9e27-6312c24ba42b" propertyAttribute="folderKey" />
+        <uipath:binding id="bQqfBZOxF" name="uipath-salesforce-sfdc connection" type="string" default="e2520c3c-5599-472e-8f48-0b23af912358" resource="Connection" resourceKey="e2520c3c-5599-472e-8f48-0b23af912358" propertyAttribute="ConnectionId" />
+      </uipath:bindings>
+    </bpmn:extensionElements>
+    <bpmn:subProcess id="Activity_5Jk9GU" name="Devcon Case management">
+      <bpmn:extensionElements>
+        <uipath:variables version="v1">
+          <uipath:inputOutput id="vrHAE2py1" name="HitlReview" type="string" elementId="Activity_Dn4R6H" custom="true" />
+          <uipath:inputOutput id="v1RZHCOZb" name="Review_Requested" type="boolean" elementId="Activity_1NKtIv" custom="true" />
+        </uipath:variables>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_uv2uoj</bpmn:incoming>
+      <bpmn:outgoing>edge_fFTOWu</bpmn:outgoing>
+      <bpmn:task id="Activity_VSBAuk" name="Notification">
+        <bpmn:incoming>edge_R1CzXU</bpmn:incoming>
+        <bpmn:incoming>edge_MeeRlt</bpmn:incoming>
+        <bpmn:incoming>edge_tXsqht</bpmn:incoming>
+        <bpmn:incoming>edge_Xg8T5z</bpmn:incoming>
+      </bpmn:task>
+      <bpmn:subProcess id="Activity_Dn4R6H" name="Application Intake">
+        <bpmn:extensionElements>
+          <uipath:mapping version="v1">
+            <uipath:type value="BPMN.Variables" version="v1" />
+            <uipath:output name="HitlReview" type="string" source="=vars.vI93zZJXB" var="vrHAE2py1" custom="true" />
+          </uipath:mapping>
+          <uipath:variables version="v1">
+            <uipath:inputOutput id="vv5Npt5jV" name="Error" type="jsonSchema" elementId="Activity_xE1BKW"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+            <uipath:inputOutput id="vI93zZJXB" name="Hitl_Action" type="string" elementId="Activity_xE1BKW" />
+            <uipath:inputOutput id="vrQjsiIGb" name="Error" type="jsonSchema" elementId="Activity_RzD8ZL"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+            <uipath:inputOutput id="vvgyNei44" name="GOTOHITL" type="boolean" elementId="Activity_RzD8ZL" />
+          </uipath:variables>
+        </bpmn:extensionElements>
+        <bpmn:incoming>edge_VC27UJ</bpmn:incoming>
+        <bpmn:incoming>edge_Sk5LTa</bpmn:incoming>
+        <bpmn:outgoing>edge_Activity_Dn4R6H-Gateway_OUyeS0</bpmn:outgoing>
+        <bpmn:startEvent id="Event_1kAki7">
+          <bpmn:outgoing>edge_Event_1kAki7-Gateway_JQ9S6MS7Bcgz</bpmn:outgoing>
+        </bpmn:startEvent>
+        <bpmn:callActivity id="Activity_RzD8ZL" name="ApplicationIntakeCallActivity">
+          <bpmn:extensionElements>
+            <uipath:activity version="v1">
+              <uipath:type value="Orchestrator.StartAgenticProcess" version="v2" />
+              <uipath:context>
+                <uipath:input name="name" type="string" value="=bindings.bNhWi4WGA" />
+                <uipath:input name="folderPath" type="string" value="=bindings.bNhtkUusi" />
+                <uipath:input name="_label" type="string" value="ApplicationIntakeCallActivity" />
+                <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"Name":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+              </uipath:context>
+              <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"Name":"=vars.vIRYqKwJg.FirstName"}]]></uipath:input>
+              <uipath:output name="Error" type="jsonSchema" source="=Error" var="vrQjsiIGb" />
+              <uipath:output name="GOTOHITL" type="boolean" source="=GOTOHITL" var="vvgyNei44" />
+            </uipath:activity>
+          </bpmn:extensionElements>
+          <bpmn:incoming>edge_Gateway_JQ9S6M-Activity_RzD8ZLiXO5FV</bpmn:incoming>
+          <bpmn:outgoing>edge_Activity_RzD8ZL-Activity_xE1BKWfn2ow8</bpmn:outgoing>
+        </bpmn:callActivity>
+        <bpmn:callActivity id="Activity_xE1BKW" name="ApplicationIntakeHITLCallActivity">
+          <bpmn:extensionElements>
+            <uipath:activity version="v1">
+              <uipath:type value="Orchestrator.StartAgenticProcess" version="v2" />
+              <uipath:context>
+                <uipath:input name="name" type="string" value="=bindings.bFQ9I4yrt" />
+                <uipath:input name="folderPath" type="string" value="=bindings.b2aUik0a8" />
+                <uipath:input name="_label" type="string" value="ApplicationIntakeHITLCallActivity" />
+                <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"Title":{"type":"string"},"Info":{"type":"string"},"SkipHITL":{"type":"boolean"}},"required":[]}]]></uipath:inputSchema>
+              </uipath:context>
+              <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"Title":"=vars.vvILMH4B7 >=1 ? \"Escalation Loan analysis\": \"Escalation Application Intake\"","Info":"=vars.vvILMH4B7 >=1? \"Loan analysis requested\": \"Application Intake info\"","SkipHITL":"=vars.vvILMH4B7 >= 1 ? false : !vars.vvgyNei44"}]]></uipath:input>
+              <uipath:output name="Error" type="jsonSchema" source="=Error" var="vv5Npt5jV" />
+              <uipath:output name="Hitl_Action" type="string" source="=Hitl_Action" var="vI93zZJXB" />
+            </uipath:activity>
+          </bpmn:extensionElements>
+          <bpmn:incoming>edge_wiuTLh</bpmn:incoming>
+          <bpmn:incoming>edge_Activity_RzD8ZL-Activity_xE1BKWfn2ow8</bpmn:incoming>
+          <bpmn:outgoing>edge_Activity_xE1BKW-Event_hrQZK1</bpmn:outgoing>
+        </bpmn:callActivity>
+        <bpmn:endEvent id="Event_hrQZK1">
+          <bpmn:incoming>edge_Activity_xE1BKW-Event_hrQZK1</bpmn:incoming>
+        </bpmn:endEvent>
+        <bpmn:exclusiveGateway id="Gateway_JQ9S6M" default="edge_Gateway_JQ9S6M-Activity_RzD8ZLiXO5FV">
+          <bpmn:incoming>edge_Event_1kAki7-Gateway_JQ9S6MS7Bcgz</bpmn:incoming>
+          <bpmn:outgoing>edge_Gateway_JQ9S6M-Activity_RzD8ZLiXO5FV</bpmn:outgoing>
+          <bpmn:outgoing>edge_wiuTLh</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:sequenceFlow id="edge_Activity_xE1BKW-Event_hrQZK1" sourceRef="Activity_xE1BKW" targetRef="Event_hrQZK1" />
+        <bpmn:sequenceFlow id="edge_Event_1kAki7-Gateway_JQ9S6MS7Bcgz" sourceRef="Event_1kAki7" targetRef="Gateway_JQ9S6M" />
+        <bpmn:sequenceFlow id="edge_Gateway_JQ9S6M-Activity_RzD8ZLiXO5FV" name="Main" sourceRef="Gateway_JQ9S6M" targetRef="Activity_RzD8ZL" />
+        <bpmn:sequenceFlow id="edge_wiuTLh" name="Re-entry" sourceRef="Gateway_JQ9S6M" targetRef="Activity_xE1BKW">
+          <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=vars.vvILMH4B7 &gt;= 1</bpmn:conditionExpression>
+        </bpmn:sequenceFlow>
+        <bpmn:sequenceFlow id="edge_Activity_RzD8ZL-Activity_xE1BKWfn2ow8" sourceRef="Activity_RzD8ZL" targetRef="Activity_xE1BKW" />
+      </bpmn:subProcess>
+      <bpmn:boundaryEvent id="Event_Gxcefy" name="SLA Breach" cancelActivity="false" attachedToRef="Activity_Dn4R6H">
+        <bpmn:outgoing>edge_R1CzXU</bpmn:outgoing>
+        <bpmn:timerEventDefinition>
+          <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">P3D</bpmn:timeDuration>
+        </bpmn:timerEventDefinition>
+      </bpmn:boundaryEvent>
+      <bpmn:subProcess id="Activity_1NKtIv" name="Loan Analysis">
+        <bpmn:extensionElements>
+          <uipath:mapping version="v1">
+            <uipath:type value="BPMN.Variables" version="v1" />
+            <uipath:output name="Review_Requested" type="boolean" source="=vars.v96igYE5b" var="v1RZHCOZb" custom="true" />
+            <uipath:output name="ApplicationIntake_RetryCount" type="integer" source="= vars.v96igYE5b ? vars.vvILMH4B7 + 1 : vars.vvILMH4B7" var="vvILMH4B7" custom="true" />
+          </uipath:mapping>
+          <uipath:variables version="v1">
+            <uipath:inputOutput id="vYzHl2ScM" name="Error" type="jsonSchema" elementId="Activity_oKA1DC"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+            <uipath:inputOutput id="vLDg3kwvl" name="Decision" type="boolean" elementId="Activity_oKA1DC" />
+            <uipath:inputOutput id="v96igYE5b" name="ReviewRequested" type="boolean" elementId="Activity_oKA1DC" />
+          </uipath:variables>
+        </bpmn:extensionElements>
+        <bpmn:incoming>edge_m7oU8C</bpmn:incoming>
+        <bpmn:incoming>edge_9XCTng</bpmn:incoming>
+        <bpmn:outgoing>edge_Activity_1NKtIv-Gateway_WtdtHc</bpmn:outgoing>
+        <bpmn:startEvent id="Event_qcKyaD">
+          <bpmn:outgoing>edge_Event_qcKyaD-Activity_oKA1DC</bpmn:outgoing>
+        </bpmn:startEvent>
+        <bpmn:callActivity id="Activity_oKA1DC" name="Loan.Eligibility.Analysis.CallActivity">
+          <bpmn:extensionElements>
+            <uipath:activity version="v1">
+              <uipath:type value="Orchestrator.StartAgenticProcess" version="v2" />
+              <uipath:context>
+                <uipath:input name="name" type="string" value="=bindings.bThCs1oj1" />
+                <uipath:input name="folderPath" type="string" value="=bindings.bCanHEwH9" />
+                <uipath:input name="_label" type="string" value="Loan.Eligibility.Analysis.CallActivity" />
+                <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"Name":{"type":"string"},"HitlReviewDecision":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+              </uipath:context>
+              <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"Name":"=vars.vIRYqKwJg.FirstName","HitlReviewDecision":"=vars.vrHAE2py1"}]]></uipath:input>
+              <uipath:output name="Error" type="jsonSchema" source="=Error" var="vYzHl2ScM" />
+              <uipath:output name="Decision" type="boolean" source="=Decision" var="vLDg3kwvl" />
+              <uipath:output name="ReviewRequested" type="boolean" source="=ReviewRequested" var="v96igYE5b" />
+            </uipath:activity>
+          </bpmn:extensionElements>
+          <bpmn:incoming>edge_Event_qcKyaD-Activity_oKA1DC</bpmn:incoming>
+          <bpmn:outgoing>edge_Activity_oKA1DC-Event_DVdLxYN83SKL</bpmn:outgoing>
+        </bpmn:callActivity>
+        <bpmn:endEvent id="Event_DVdLxY">
+          <bpmn:incoming>edge_Activity_oKA1DC-Event_DVdLxYN83SKL</bpmn:incoming>
+        </bpmn:endEvent>
+        <bpmn:sequenceFlow id="edge_Event_qcKyaD-Activity_oKA1DC" sourceRef="Event_qcKyaD" targetRef="Activity_oKA1DC" />
+        <bpmn:sequenceFlow id="edge_Activity_oKA1DC-Event_DVdLxYN83SKL" sourceRef="Activity_oKA1DC" targetRef="Event_DVdLxY" />
+      </bpmn:subProcess>
+      <bpmn:boundaryEvent id="Event_Hkqtwa" name="Sla Breach" cancelActivity="false" attachedToRef="Activity_1NKtIv">
+        <bpmn:outgoing>edge_tXsqht</bpmn:outgoing>
+        <bpmn:timerEventDefinition>
+          <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">P3D</bpmn:timeDuration>
+        </bpmn:timerEventDefinition>
+      </bpmn:boundaryEvent>
+      <bpmn:subProcess id="Activity_7yHU0G" name="Data Verification">
+        <bpmn:extensionElements>
+          <uipath:variables version="v1">
+            <uipath:inputOutput id="vXzNkas7T" name="Error" type="jsonSchema" elementId="Activity_KTnbAw"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+          </uipath:variables>
+        </bpmn:extensionElements>
+        <bpmn:incoming>edge_KZHvdB</bpmn:incoming>
+        <bpmn:outgoing>edge_m7oU8C</bpmn:outgoing>
+        <bpmn:startEvent id="Event_pxwx0U">
+          <bpmn:outgoing>edge_Event_pxwx0U-Activity_KTnbAw</bpmn:outgoing>
+        </bpmn:startEvent>
+        <bpmn:callActivity id="Activity_KTnbAw" name="DataEntryVerification.CallActivity">
+          <bpmn:extensionElements>
+            <uipath:activity version="v1">
+              <uipath:type value="Orchestrator.StartAgenticProcess" version="v2" />
+              <uipath:context>
+                <uipath:input name="name" type="string" value="=bindings.bLhRPO9sg" />
+                <uipath:input name="folderPath" type="string" value="=bindings.b5zIqMTz0" />
+                <uipath:input name="_label" type="string" value="DataEntryVerification.CallActivity" />
+                <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"Name":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+              </uipath:context>
+              <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"Name":"=vars.vIRYqKwJg.FirstName"}]]></uipath:input>
+              <uipath:output name="Error" type="jsonSchema" source="=Error" var="vXzNkas7T" />
+            </uipath:activity>
+          </bpmn:extensionElements>
+          <bpmn:incoming>edge_Event_pxwx0U-Activity_KTnbAw</bpmn:incoming>
+          <bpmn:outgoing>edge_Activity_KTnbAw-Event_CcnNKC</bpmn:outgoing>
+        </bpmn:callActivity>
+        <bpmn:endEvent id="Event_CcnNKC">
+          <bpmn:incoming>edge_Activity_KTnbAw-Event_CcnNKC</bpmn:incoming>
+        </bpmn:endEvent>
+        <bpmn:sequenceFlow id="edge_Event_pxwx0U-Activity_KTnbAw" sourceRef="Event_pxwx0U" targetRef="Activity_KTnbAw" />
+        <bpmn:sequenceFlow id="edge_Activity_KTnbAw-Event_CcnNKC" sourceRef="Activity_KTnbAw" targetRef="Event_CcnNKC" />
+      </bpmn:subProcess>
+      etc...
